@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe TeamsquareHmacSignature do
   it 'has the correct version number' do
-    expect(TeamsquareHmacSignature::VERSION).to eq('0.1.0')
+    expect(TeamsquareHmacSignature::VERSION).to eq('1.0.1')
   end
 end
 
