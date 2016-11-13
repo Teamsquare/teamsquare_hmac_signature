@@ -1,8 +1,8 @@
-# TeamsquareHmacSignature
+# Teamsquare HMAC Signature
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hmac_signature`. To experiment with that code, run `bin/console` for an interactive prompt.
+Gem to share common HMAC generation logic between projects.
 
-TODO: Delete this and the text above, and describe your gem
+Generates an HMAC specifically for use between the ldap_gateway and the Teamsquare API. 
 
 ## Installation
 
@@ -22,7 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    2.2.4 :001 > TeamsquareHmacSignature::HMAC256.generate('shared_secret', 'jappleseed', 1479003125, 'ba867f4773eac31b351684f1460cf8a621d2011a446b5134')
+     => "ab9596edf4e21f19c2dcbdc13944944f2cbce1534cd6db2206f9783ef79f1292"
 
 ## Development
 
@@ -32,8 +33,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/hmac_signature/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Fork it
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Commit your changes (`git add -p ./path/to/files; git commit -m 'Add some feature'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create new Pull Request
+
+# License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
