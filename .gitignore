@@ -8,3 +8,5 @@
 /spec/reports/
 /tmp/
 workspace.xml
+/.idea
+teamsquare_hmac_signature-*.gem
